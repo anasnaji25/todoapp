@@ -44,7 +44,7 @@ class TODOcontroller extends GetxController{
   updatesStatus(int i){
      listOfTodos[i]['status'] = true;
  
- update();
+    update();
   }
 
   updatesStatusfalse(int i){
@@ -65,9 +65,8 @@ class TODOcontroller extends GetxController{
   }
 
 
-  removeFromTODO(int i){
+ removeFromTODO(int i){
  listOfTodos.removeAt(i);
- listOfTodos[i]['isDeleted'] = false;
  update();
   }
 
